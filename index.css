@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --Orange1: hsl(35, 77%, 62%);
+  --Red1: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+  background-color: var(--Off-white);
+  font-family: 'Inter';
+
+}
+
+/* --------------------navigation bar----------------------------- */
+
+.container {
+  font-family: inherit;
+  position: fixed;
+  height: 91px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 24px;
+  z-index: 1;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-list {
+  display: none;
+}
+
+.btn-hamburger {
+  z-index: 100;
+}
+
+.btn-hamburger .closeIcon {
+  display: none;
+  font-size: 50px;
+  padding-right: 10%;
+}
+
+.showMenu {
+  font-family: inherit;
+  width: 78vh;
+  height: 100vh;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  height: 100vh;
+  border-radius: 0;
+  padding-top: 69px;
+  align-items: left;
+  margin-top: 0%;
+  margin-left: 12%;
+  margin-right: -20%;
+  background-color: var(--Off-white);
+}
+
+.showMenu li {
+  list-style: none;
+}
+
+.showMenu li .menuItem {
+  font-size: 18px;
+  margin-left: 13%;
+}
+
+.home-div a {
+  color: var(--white);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 100%;
+  border: none;
+  background: none;
+}
+
+.btn-hamburger {
+  display: flex;
+  flex-direction: row;
+  background: none;
+  color: var(--white);
+  padding-right: 13%;
+  padding-top: 6%;
+  border: none;
+}
+
+.blur {
+  background-color: var(--Grayish-blue);
+}
+
+/* ---------------------------Landing Section------------------------- */
+
+.landingP {
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%
+}
+
+.images {
+  height: 310px;
+  width: 324px;
+  margin-left: 4%;
+}
+
+.landing-artik h1 {
+  color: var(--Very-dark-blue);
+  font-size: 42px;
+  margin-left: 4%;
+
+}
+
+.landing-artik p {
+  color: var(--Dark-grayish-blue);
+  font-size: 15px;
+  margin-left: 4%;
+}
+
+.readMore {
+  background-color: var(--Red1);
+  border: none;
+  color: var(--Off-white);
+  width: 100px;
+  height: 38px;
+  margin-top: 4%;
+}
+
+.readMore:hover {
+  background-color: var(--Off-white);
+  border: 2px solid var(--Red1);
+  color: var(--Very-dark-blue);
+  width: 100px;
+  height: 38px;
+  margin-top: 4%;
+}
+
+.new {
+  background-color: var(--Very-dark-blue);
+  margin-top: 10%;
+  width: 329px;
+  margin-left: 4%;
+  color: var(--Off-white);
+}
+
+.new h2 {
+  color: var(--Orange1);
+  margin-left: 4%;
+  margin-top: 4%;
+}
+
+.new h4,
+p {
+  margin-left: 4%;
+  margin-top: 4%;
+}
+
+.new hr {
+  width: 90%;
+}
+
+/* ---------------------------Computer Section------------------------ */
+
+.computer {
+  font-family: inherit;
+  margin-top: 10%;
+  margin-left: 4%;
+}
+
+.comp-one {
+  display: flex;
+  gap: 3%;
+}
+
+.comp-one img {
+  width: 127px;
+  height: 171px;
+  margin-top: 0;
+}
+
+.comp-one .action {
+  margin-top: -7%;
+  margin-bottom: 10%;
+}
+
+.comp-one .action h2 {
+  color: var(--Grayish-blue);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.comp-one .action h4 {
+  color: var(--Very-dark-blue);
+  font-weight: 500;
+}
+
+.comp-one .action p {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+}
+
+/* --------------------------Desktop Version---------------------------*/
+
+@media (min-width: 768px) {
+  .container {
+    position: fixed;
+    height: 91px;
+    width: 100%;
+    left: 0px;
+    top: 3%;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 24px;
+    z-index: 1;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20%;
+    margin-top: 4%;
+    gap: 6%;
+    list-style: none;
+  }
+
+  .menu-list li a {
+    color: var(--Dark-grayish-blue);
+
+  }
+
+  .btn-hamburger {
+    display: none;
+  }
+
+  .home-div a {
+    color: var(--Very-dark-blue);
+    font-weight: 700;
+    font-size: 48px;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border: none;
+    background: none;
+    margin-left: 30%;
+
+  }
+
+  /* ---------------------------Landing Section------------------------- */
+
+  .landingP {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20%;
+    width: 90%;
+    margin-left: 4%;
+  }
+
+  .images {
+    height: 305px;
+    width: 90%;
+    margin-left: 4%;
+  }
+
+  .new {
+    background-color: var(--Very-dark-blue);
+    width: 90%;
+    margin-left: -1%;
+    color: var(--Off-white);
+    margin-top: 0;
+  }
+
+  .landing-artik {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .landing-artik p {
+    color: var(--Dark-grayish-blue);
+    font-size: 15px;
+    margin-left: 0;
+    width: 100%;
+    margin-right: 4%;
+  }
+
+  .new h2 {
+    color: var(--Orange1);
+    margin-left: 4%;
+    margin-top: 4%;
+  }
+
+  .new h4,
+  p {
+    margin-left: 4%;
+    margin-top: 4%;
+  }
+
+  /* ----------------------Computer Section------------------------ */
+
+  .computer {
+    display: flex;
+    gap: 3%;
+  }
+
+  .comp-one {
+    display: flex;
+    gap: 1%;
+    width: 30%;
+    margin-right: 6%;
+  }
+
+  .comp-one img {
+    width: 100px;
+    height: 167px;
+    margin-top: 0;
+  }
+
+  .comp-one .action {
+    margin-top: -13%;
+    margin-bottom: 10%;
+    margin-left: 2%;
+  }
+
+  .comp-one .action h2 {
+    color: var(--Grayish-blue);
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .comp-one .action h4 {
+    color: var(--Very-dark-blue);
+    font-weight: 500;
+  }
+
+  .comp-one .action p {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    margin-top: -9px;
+    font-size: 15px;
+  }
+}
